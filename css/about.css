@@ -186,8 +186,77 @@ ul{
     align-items: center; 
     margin-top: 128px;
     box-shadow: 0px -12px 20px 4px #E9C084;
-    border: 20px solid #FFB290; 
+    background-image: url(../img/BACK_follow_ig.png);
 }
+
+@media (max-width: 768px) {
+    .bodycontainer{
+        margin: 0 auto;
+        max-width: 640px;
+    }
+    
+    .about01{
+        flex-direction: column;
+        justify-content: center;    
+        align-items: center; 
+        margin-top: 64px;
+        font-size: 24px;
+        line-height: 48px;
+        color: #7B5333;
+    }
+    
+    .about02{
+        flex-direction: column-reverse;
+        justify-content: center;    
+        align-items: center; 
+        margin-top: 64px;
+        font-size: 20px;
+        line-height: 40px;
+        color: #7B5333;
+    }
+    
+    .about03{
+        flex-direction: column;
+        justify-content: center;    
+        align-items: center; 
+        margin-top: 64px;
+        font-size: 20px;
+        line-height: 40px;
+        color: #7B5333;
+    }
+    
+    .about04{
+        flex-direction: column-reverse;
+        justify-content: center;    
+        align-items: center; 
+        margin-top: 64px;
+        font-size: 20px;
+        line-height: 40px;
+        color: #7B5333;
+    }
+    
+    .about05{
+        flex-direction: column;
+        justify-content: center;    
+        align-items: center; 
+        margin-top: 64px;
+        font-size: 20px;
+        line-height: 40px;
+        color: #7B5333;
+    }
+
+    .IG{
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: center;    
+        align-items: center; 
+        margin-top: 128px;
+        box-shadow: 0px -12px 20px 4px #E9C084;
+        background-image: url(../img/BACK_follow_ig.png);
+    }
+
+  }
 
 .footer{
     width: 100%;
