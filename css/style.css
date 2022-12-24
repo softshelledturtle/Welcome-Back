@@ -37,7 +37,6 @@ ul{
 
 .nav-container{
    display: flex;
-   padding-left: 180px;
    align-items: center;
 }
 
@@ -48,7 +47,6 @@ ul{
     font-size: 20px;
     background-color: #7B5333;   
     padding-right: 266px; 
-    align-items: center;
 }
 
 .nav-logo{
