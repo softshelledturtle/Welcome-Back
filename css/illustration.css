@@ -134,7 +134,7 @@ ul{
 
   /* 關閉按鈕 */
 .close {
-    color: #7B5333; /* 文字顏色 */
+    color: #DBA552; /* 文字顏色 */
     float: right; /* 浮動在右側 */
     font-size: 48px; /* 字體大小 */
     font-weight: bold; /* 粗體 */
@@ -144,11 +144,13 @@ ul{
     color: #FFF7E0;
     font-size: 64px; /* 字體大小 */
 }
-.mySlides {
-    display: none; /* 默認隱藏 */
+.slide {
     margin: 0 auto;
-    width: 50%;
-    height: 50%;
+    position: absolute; /* 絕對定位 */
+    top: 50%; /* 上邊距在彈出視窗中央 */
+    left: 50%; /* 左邊距在彈出視窗中央 */
+    transform: translate(-50%, -50%); /* 平移 */
+    max-width: 540px;
 }
 
   /* 上一張按鈕 */
@@ -265,7 +267,7 @@ ul{
 
 /* 關閉按鈕 */
 .close {
-    color: #7B5333; /* 文字顏色 */
+    color: #DBA552; /* 文字顏色 */
     float: right; /* 浮動在右側 */
     font-size: 48px; /* 字體大小 */
     font-weight: bold; /* 粗體 */
@@ -276,15 +278,7 @@ ul{
     font-size: 64px; /* 字體大小 */
 }
 
-.mySlides {
-    display: none; /* 預設隱藏 */
-    position: absolute; /* 絕對定位 */
-    top: 30%; /* 上邊距在彈出視窗中央 */
-    left: 50%; /* 左邊距在彈出視窗中央 */
-    transform: translate(-50%, -50%); /* 平移 */
-    width: 50%;
-    height: 50%;
-}
+
 
   /* 上一張按鈕 */
 .prev {
@@ -383,6 +377,16 @@ ul{
 
 @media (max-width: 940px){
 
+    .slide {
+        margin: 0 auto;
+        position: absolute; /* 絕對定位 */
+        top: 50%; /* 上邊距在彈出視窗中央 */
+        left: 50%; /* 左邊距在彈出視窗中央 */
+        transform: translate(-50%, -50%); /* 平移 */
+        max-width: 360px;
+    }
+    
+
     .col{
         padding: 0 24px 0 24px;
         width: calc(100%/2);
@@ -391,9 +395,10 @@ ul{
 }
 
 @media (max-width: 768px){
+
     /* 關閉按鈕 */
 .close {
-    color: #7B5333; /* 文字顏色 */
+    color: #DBA552; /* 文字顏色 */
     float: right; /* 浮動在右側 */
     font-size: 48px; /* 字體大小 */
     font-weight: bold; /* 粗體 */
@@ -404,14 +409,13 @@ ul{
     font-size: 64px; /* 字體大小 */
 }
 
-.mySlides {
-    display: none; /* 預設隱藏 */
+.slide {
+    margin: 0 auto;
     position: absolute; /* 絕對定位 */
     top: 50%; /* 上邊距在彈出視窗中央 */
     left: 50%; /* 左邊距在彈出視窗中央 */
     transform: translate(-50%, -50%); /* 平移 */
-    width: 50%;
-    height: 50%;
+    max-width: 480px;
 }
 
   /* 上一張按鈕 */

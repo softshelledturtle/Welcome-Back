@@ -8,7 +8,7 @@
     <script src="js/script.js"></script>
 </head>
 <div class="body-container">
-<body onload="showSlides()">
+<body>
     <header class="header">
         <nav class="nav">
                 <a class="nav-logo" href="index.html" target="_self">
@@ -46,37 +46,93 @@
         </nav> 
     </header>
     <!-- 彈出視窗 -->
-    <div id="myModal01" class="modal">
-        <!-- 關閉按鈕 -->
-        <span class="close" onclick="closeModal('myModal01')">&times;</span>
-        <!-- 幻燈片 1 -->
-        <div class="mySlides">
-            <img src="img/BACK - Xmas2022.png" style="width:100%">
-        </div>
-    </div>
-</div>
-
-        <div id="myModal02" class="modal">
-                <!-- 關閉按鈕 -->
-                <span class="close" onclick="closeModal('myModal02')">&times;</span>
-                <!-- 上一張按鈕 -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <!-- 幻燈片 1 -->
-                <div class="mySlides">
-                    <img src="img/周邊-card01.png" style="width:100%">
-                </div>
-                <!-- 幻燈片 2 -->
-                <div class="mySlides">
-                    <img src="img/周邊-card02.png" style="width:100%">
-                </div>
-                <!-- 幻燈片 3 -->
-                <div class="mySlides">
-                    <img src="img/周邊-card03.png" style="width:100%">
-                </div>
-                <!-- 下一張按鈕 -->
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div id="myModal01" class="modal" onload="showSlides()">
+            <!-- 關閉按鈕 -->
+            <span class="close" onclick="closeModal('myModal01')">&times;</span>
+            <!-- 幻燈片 1 -->
+            <div class="mySlides01">
+                <img class="slide" src="img/BACK - Xmas2022.png" style="width:100%">
             </div>
         </div>
+
+        <div id="myModal02" class="modal" onload="showSlides('mySlides02')">
+                <!-- 關閉按鈕 -->
+                <span class="close" onclick="closeModal('myModal02')">&times;</span>
+                <!-- 幻燈片 1 -->
+                <div class="mySlides02">
+                    <img class="slide" src="img/周邊-card01.png">
+                </div>
+                <!-- 幻燈片 2 -->
+                <div class="mySlides02">
+                    <img class="slide" src="img/周邊-card02.png">
+                </div>
+                <!-- 幻燈片 3 -->
+                <div class="mySlides02">
+                    <img class="slide" src="img/周邊-card03.png">
+                </div>
+                <!-- 上一張按鈕 -->
+                <a class="prev" onclick="plusSlides('mySlides02',-1)">&#10094;</a>
+                <!-- 下一張按鈕 -->
+                <a class="next" onclick="plusSlides('mySlides02',1)">&#10095;</a>
+        </div>
+
+        <div id="myModal03" class="modal" onload="showSlides()">
+            <!-- 關閉按鈕 -->
+            <span class="close" onclick="closeModal('myModal03')">&times;</span>
+            <!-- 幻燈片 1 -->
+            <div class="mySlides03">
+                <img class="slide" src="img/BACK - babo tea.png" style="width:100%">
+            </div>
+        </div>
+
+        <div id="myModal04" class="modal" onload="showSlides('mySlides04')">
+            <!-- 關閉按鈕 -->
+            <span class="close" onclick="closeModal('myModal04')">&times;</span>
+            <!-- 幻燈片 1 -->
+            <div class="mySlides04">
+                <img class="slide" src="img/BACK_Halloween2022-1.png">
+            </div>
+            <!-- 幻燈片 2 -->
+            <div class="mySlides04">
+                <img class="slide" src="img/BACK - Halloween2022-2.png">
+            </div>
+            <!-- 幻燈片 3 -->
+            <div class="mySlides04">
+                <img class="slide" src="img/BACK - Halloween2022-3.png">
+            </div>
+            <!-- 幻燈片 4 -->
+            <div class="mySlides04">
+                <img class="slide" src="img/BACK - Halloween2022-4.png">
+            </div>
+            <!-- 幻燈片 5 -->
+            <div class="mySlides04">
+                <img class="slide" src="img/BACK - Halloween2022-5.png">
+            </div>
+            <!-- 幻燈片 6 -->
+            <div class="mySlides04">
+                <img class="slide" src="img/BACK - Halloween2022-6.png">
+            </div>
+            <!-- 幻燈片 7 -->
+            <div class="mySlides04">
+                <img class="slide" src="img/BACK - Halloween2022-7.png">
+            </div>
+            <!-- 幻燈片 8 -->
+            <div class="mySlides04">
+                <img class="slide" src="img/BACK - Halloween2022-8.png">
+            </div>
+            <!-- 幻燈片 9 -->
+            <div class="mySlides04">
+                <img class="slide" src="img/BACK - Halloween2022-9.png">
+            </div>
+            <!-- 幻燈片 10 -->
+            <div class="mySlides04">
+                <img class="slide" src="img/BACK - Halloween2022-10.png">
+            </div>
+            <!-- 上一張按鈕 -->
+            <a class="prev" onclick="plusSlides('mySlides04',-1)">&#10094;</a>
+            <!-- 下一張按鈕 -->
+            <a class="next" onclick="plusSlides('mySlides04',1)">&#10095;</a>
+    </div>
 
         <h1 class="title">
             ILLUSTRATION
@@ -112,7 +168,7 @@
             <li class="col">
                 <nav class="group">
                     <div class="images">
-                        <a href="https://www.instagram.com/p/CkYG3IgPs13/?utm_source=ig_web_copy_link" target="_blank">
+                        <a href="#" onclick="openModal('myModal03')">
                             <img class="IMG" src="img/BACK - babo tea.png" height="280" width="280">
                         </a>
                     </div>
@@ -126,7 +182,7 @@
             <li class="col">
                 <nav class="group">
                     <div class="images">
-                        <a href="https://www.instagram.com/p/CkYG3IgPs13/?utm_source=ig_web_copy_link" target="_blank">
+                        <a href="#" onclick="openModal('myModal04')">
                             <img class="IMG" src="img/BACK_Halloween2022-1.png" height="280" width="280">
                         </a>
                     </div>
@@ -308,6 +364,7 @@
             </li>
 
         </ul>
+</div>
 
         <footer class="footer">
             <ul class="footer-bar">
