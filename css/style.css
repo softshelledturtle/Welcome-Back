@@ -35,6 +35,7 @@ ul{
     list-style: none;
 }
 
+/* nav */
 .nav-container{
    display: flex;
    align-items: center;
@@ -118,6 +119,8 @@ ul{
     color:#000000;
     background-color: #DBA552;
 }
+/* nav end */
+
 
 .line{
     width: 1px;
