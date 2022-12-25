@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Welcome Back.gallery illustration</title>
+    <link href="css/comic.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<div class="body-container">
+<body>
+    <header class="header">
+        <nav class="nav">
+                <a class="nav-logo" href="index.html" target="_self">
+                <img src="img/btn_logo.png" alt="Back's logo">
+                </a>
+            <div class="nav-container">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="about.html" target="_self">ABOUT</a></li>
+                <li class="nav-item"><a class="line">|</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" target="_self">STORY</a></li>
+                <li class="nav-item"><a class="line">|</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" target="_self">GALLERY</a>
+                    <ul class="nav-sublist">
+                        <li class="nav-sublist-item">
+                            <a class="nav-sublist-link" href="illustration.html" target="_self">ILLUSTRATION</a>
+                        </li>
+                        <li class="nav-sublist-item">
+                            <a class="nav-sublist-link" href="comic.html" target="_self">COMIC</a>
+                        </li>
+                        <li class="nav-sublist-item">
+                            <a class="nav-sublist-link" href="#" target="_self">MEME</a>
+                        </li>
+                        <li class="nav-sublist-item">
+                            <a class="nav-sublist-link" href="#" target="_self">ANIMATION</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="line">|</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" target="_self">PRODUCT</a></li>
+                <li class="nav-item"><a class="line">|</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" target="_self">CREATOR</a></li>
+            </ul>   
+            </div>         
+        </nav> 
+    </header>
+    <!-- 彈出視窗 -->
+        <div id="myModal01" class="modal" onload="showSlides()">
+            <!-- 關閉按鈕 -->
+            <span class="close" onclick="closeModal('myModal01')">&times;</span>
+            <!-- 幻燈片 1 -->
+            <div class="mySlides01">
+                <img class="slide" src="img/BACK - cold and mask.png" style="width:100%">
+            </div>
+        </div>
+
+        <div id="myModal02" class="modal" onload="showSlides('mySlides02')">
+                <!-- 關閉按鈕 -->
+                <span class="close" onclick="closeModal('myModal02')">&times;</span>
+                <!-- 幻燈片 1 -->
+                <div class="mySlides02">
+                    <img class="slide" src="img/BACK - too cozy02.png">
+                </div>
+                <!-- 幻燈片 2 -->
+                <div class="mySlides02">
+                    <img class="slide" src="img/BACK - too cozy01.png">
+                </div>
+                <!-- 上一張按鈕 -->
+                <a class="prev" onclick="plusSlides('mySlides02',-1)">&#10094;</a>
+                <!-- 下一張按鈕 -->
+                <a class="next" onclick="plusSlides('mySlides02',1)">&#10095;</a>
+        </div>
+
+        <div id="myModal03" class="modal" onload="showSlides('mySlides03')">
+            <!-- 關閉按鈕 -->
+            <span class="close" onclick="closeModal('myModal03')">&times;</span>
+            
+            <!-- 幻燈片 2 -->
+            <div class="mySlides03">
+                <img class="slide" src="img/BACK - early02.png">
+            </div>
+             <!-- 幻燈片 3 -->
+             <div class="mySlides03">
+                <img class="slide" src="img/BACK - early03.png" style="width:100%">
+            </div>
+            <!-- 幻燈片 4 -->
+            <div class="mySlides03">
+                <img class="slide" src="img/BACK - early04.png">
+            </div>
+            <!-- 幻燈片 1 -->
+            <div class="mySlides03">
+                <img class="slide" src="img/BACK - early01.png" style="width:100%">
+            </div>
+            <!-- 上一張按鈕 -->
+            <a class="prev" onclick="plusSlides('mySlides03',-1)">&#10094;</a>
+            <!-- 下一張按鈕 -->
+            <a class="next" onclick="plusSlides('mySlides03',1)">&#10095;</a>
+        </div>
+
+        <div id="myModal04" class="modal" onload="showSlides('mySlides04')">
+            <!-- 關閉按鈕 -->
+            <span class="close" onclick="closeModal('myModal04')">&times;</span>
+            
+            <!-- 幻燈片 2 -->
+            <div class="mySlides04">
+                <img class="slide" src="img/BACK - shooter02.png">
+            </div>
+            <!-- 幻燈片 3 -->
+            <div class="mySlides04">
+                <img class="slide" src="img/BACK - shooter03.png">
+            </div>
+            <!-- 幻燈片 4 -->
+            <div class="mySlides04">
+                <img class="slide" src="img/BACK - shooter04.png">
+            </div>
+            <!-- 幻燈片 1 -->
+            <div class="mySlides04">
+                <img class="slide" src="img/BACK - shooter01.png">
+            </div>
+            <!-- 上一張按鈕 -->
+            <a class="prev" onclick="plusSlides('mySlides04',-1)">&#10094;</a>
+            <!-- 下一張按鈕 -->
+            <a class="next" onclick="plusSlides('mySlides04',1)">&#10095;</a>
+    </div>
+
+        <h1 class="title">
+            COMIC
+        </h1>
+
+        <ul class="row">
+            <li class="col">
+                <nav class="group">
+                    <div class="images">
+                        <a href="#" onclick="openModal('myModal01')">
+                            <img class="IMG" src="img/BACK - cold and mask.png" height="280" width="280">
+                        </a>
+                    </div>
+                    <p class="date">2022.12.14</p>
+                    <p class="text">
+                        天冷戴口罩
+                    </p>
+                </nav>
+            </li>
+            <li class="col">
+                <nav class="group">
+                    <div class="images">
+                        <a href="#" onclick="openModal('myModal02')">
+                            <img class="IMG" src="img/BACK - too cozy01.png" height="280" width="280">
+                        </a>
+                    </div>
+                    <p class="date">2022.11.9</p>
+                    <p class="text">
+                        鬧鐘與被窩
+                    </p>
+                </nav>
+            </li>
+            <li class="col">
+                <nav class="group">
+                    <div class="images">
+                        <a href="#" onclick="openModal('myModal03')">
+                            <img class="IMG" src="img/BACK - early01.png" height="280" width="280">
+                        </a>
+                    </div>
+                    <p class="date">2022.9.28</p>
+                    <p class="text">
+                        健康作息
+                    </p>
+                </nav>
+            </li>
+            <li class="col">
+                <nav class="group">
+                    <div class="images">
+                        <a href="#" onclick="openModal('myModal04')">
+                            <img class="IMG" src="img/BACK - shooter01.png" height="280" width="280">
+                        </a>
+                    </div>
+                    <p class="date">2022.9.7</p>
+                    <p class="text">
+                        當貝可拿著雨傘
+                    </p>
+                </nav>
+            </li>
+                <li class="col">
+                <nav class="group">
+                    <div class="images">
+                        <a href="https://www.instagram.com/p/CkYGX6fPgyP/?utm_source=ig_web_copy_link" target="_blank">
+                            <img class="IMG" src="img/BACK - spicy01.png" height="280" width="280">
+                        </a>
+                    </div>
+                    <p class="date">2022.8.31</p>
+                    <p class="text">
+                        貝可喜歡吃辣
+                    </p>
+                </nav>
+            </li>
+            <li class="col">
+            <nav class="group">
+                <div class="images">
+                    <a href="https://www.instagram.com/p/CkYGX6fPgyP/?utm_source=ig_web_copy_link" target="_blank">
+                        <img class="IMG" src="img/BACK - noA01.png" height="280" width="280">
+                    </a>
+                </div>
+                <p class="date">2022.8.10</p>
+                <p class="text">
+                    當貝可睡覺時沒開冷氣
+                </p>
+            </nav>
+            </li>
+            <li class="col">
+            <nav class="group">
+                <div class="images">
+                <a  href="https://www.instagram.com/p/Cj5AAGtvwAr/?utm_source=ig_web_copy_link" target="_blank">
+                    <img class="IMG" src="img/BACK - pudding01.png" height="280" width="280">
+                </a>
+                </div>
+                <p class="date">2022.7.27</p>
+                <p class="text">
+                    貝可吃布丁
+                </p>
+            </nav>
+            </li>
+            <li class="col">
+            <nav class="group">
+                <div class="images">
+                <a  href="https://www.instagram.com/p/CjNLdOtv4Mu/?utm_source=ig_web_button_share_sheet" target="_blank">
+                    <img class="IMG" src="img/BACK - sleep 01.png" height="280" width="280">
+                </a>
+                </div>
+                <p class="date">2022.7.13</p>
+                <p class="text">貝可的睡姿</p>
+            </nav>
+            </li>
+            <li class="col">
+            <nav class="group">
+                <div  class="images">
+                <a href="https://www.instagram.com/p/CiUldI8v-8x/?utm_source=ig_web_copy_link" target="_blank">
+                    <img class="IMG" src="img/BACK - lazybone sofa 01.png" height="280" width="280">
+                </a>
+                </div>
+                <p class="date">2022.6.29</p>
+                <p class="text">懶人沙發進化史</p>
+            </nav>
+            </li>
+            <li class="col">
+            <nav class="group">
+                <div class="images">
+                 <a href="https://www.instagram.com/p/CiFRv7rLIuX/?utm_source=ig_web_copy_link" target="_blank">
+                    <img class="IMG" src="img/BACK - th.png" height="280" width="280">
+                </a>
+                </div>
+                <p class="date">2022.6.22</p>
+                 <p class="text">轟隆搖籃曲</p>
+            </nav>
+            </li>
+            <li class="col">
+            <nav class="group">
+                <div class="images">
+                <a href="https://www.instagram.com/p/ChhK4-rPe2j/?utm_source=ig_web_copy_link" target="_blank">
+                   <img class="IMG" src="img/BACK - hot summer01.png" height="280" width="280">
+                </a>
+                </div>
+                <p class="date">2022.6.1</p>
+                <p class="text">
+                    那天，<br>
+                    貝可想起了……
+                </p>
+            </nav>
+            </li>
+            <li class="col">
+            <nav class="group">
+                <div class="images">
+                <a href="https://www.instagram.com/p/Cg9IxfrPc9H/?utm_source=ig_web_copy_link" target="_blank">
+                    <img class="IMG" src="img/BACK - icedog.png" height="280" width="280">
+                </a>
+                </div>
+                <p class="date">2022.5.18</p>
+                <p class="text">
+                    天氣與冰狗
+                </p>
+            </nav>
+            </li>
+            <li class="col">
+            <nav class="group">
+                <div  class="images">
+                <a href="https://www.instagram.com/p/CgY0D5WPBTn/?utm_source=ig_web_copy_link" target="_blank">
+                    <img class="IMG" src="img/BACK-Error01.png" height="280" width="280">
+                </a>
+                </div>
+                <p class="date">2022.5.11</p>
+                <p class="text">用筆電時最怕遇到</p>
+            </nav>
+            </li>
+            <li class="col">
+            <nav class="group">
+                <div class="images">
+                <a href="https://www.instagram.com/p/Cf0xOtdvO0P/?utm_source=ig_web_copy_link" target="_blank">
+                    <img class="IMG" src="img/BACK-drawing01.png" height="280" width="280">
+                </a>
+                </div>
+                <p class="date">2022.4.13</p>
+                <p class="text">貝可有畫畫的興趣</p>
+            </nav>
+            </li>
+
+        </ul>
+</div>
+
+        <footer class="footer">
+            <ul class="footer-bar">
+                <li class="footer-bar-item"><a class="footer-bar-link" href="https://www.instagram.com/iamback_1127/" target="_blank"><img src="img/btn_instagram.png" alt="instagram icon"></a></li>
+                <li class="footer-bar-item"><a class="footer-bar-link" href="https://youtube.com/playlist?list=PLqbr_p3WIS6zO0qPnvYKEdfyBJlWgLqaf" target="_blank"><img src="img/btn_youtube.png" alt="youtube icon"></a></li>
+                <li class="footer-bar-item"><a class="footer-bar-link" href="https://twitter.com/bearjiajia625" target="_blank"><img src="img/btn_twitter.png" alt="twitter icon"></a></li>
+                <li class="footer-bar-item"><a class="footer-bar-link" href="https://www.plurk.com/bearjiajia" target="_blank"><img src="img/btn_plurk.png" alt="plurk icon"></a></li>
+            </ul>
+            <div class="footer-aside">
+                <p>Back’s E-mail：110819035back@gmail.com</p>
+                <p>Creator’s E-mail：zxcvbnm71327@gmail.com</p>
+            </div>
+            
+            <div class="footer-below">
+                
+                <p class="copyright">&copy;2022 Bearjiajia</p>
+            </div>
+        </footer>
+</body>
+</div>
+</html>
