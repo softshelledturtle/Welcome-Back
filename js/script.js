@@ -1,10 +1,23 @@
 $(document).ready(function() {
+    $(".nav-sublist").hide();
 	$(".nav-item").hover(function () {
-        $(this).children(".nav-sublist").slideDown('fast');
+        if ($(window).width() > 900) { 
+            $(this).children(".nav-sublist").slideDown('fast');
+        }
     }, function () {
-        $(this).children(".nav-sublist").slideUp('slow');
+        if ($(window).width() > 900) { 
+            $(this).children(".nav-sublist").slideUp('slow');
+        }
     });
 });
+
+$(document).ready(function(){
+    let $ul = $(".nav-list"),
+        $menu = $(".nav-menu");
+    $($menu).click(function(){
+      $ul.toggleClass("menu-click");
+    });
+  });
 
 // 顯示彈出視窗函數
 function openModal(id) {
