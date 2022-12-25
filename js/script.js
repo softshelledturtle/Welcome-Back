@@ -31,7 +31,7 @@ function closeModal(id) {
     modal.style.display = "none"; // 隱藏
   }
   
-var slideIndex = 1;
+var slideIndex = 0;
 
 // 显示幻燈片函数
 function showSlides(classname,n = 1) {
