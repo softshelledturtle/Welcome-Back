@@ -1,23 +1,27 @@
 $(document).ready(function() {
-    $(".nav-sublist").hide();
-	$(".nav-item").hover(function () {
-        if ($(window).width() > 900) { 
-            $(this).children(".nav-sublist").slideDown('fast');
-        }
-    }, function () {
-        if ($(window).width() > 900) { 
-            $(this).children(".nav-sublist").slideUp('slow');
-        }
-    });
+  $(".nav-sublist").hide();
+$(".nav-item-no-hover").hover(function () {
+      if ($(window).width() > 900) { 
+          $(this).children(".nav-sublist").slideDown('fast');
+      }
+  }, function () {
+      if ($(window).width() > 900) { 
+          $(this).children(".nav-sublist").slideUp('slow');
+      }
+  });
 });
 
 $(document).ready(function(){
-    let $ul = $(".nav-list"),
-        $menu = $(".nav-menu");
-    $($menu).click(function(){
-      $ul.toggleClass("menu-click");
-    });
+  let $ul = $(".nav-list"),
+      $menu = $(".nav-menu");
+  $($menu).click(function(){
+    if ($ul.hasClass("menu-click")) {
+      $ul.removeClass("menu-click");
+    } else {
+      $ul.addClass("menu-click");
+    }
   });
+});
 
 // 顯示彈出視窗函數
 function openModal(id) {
