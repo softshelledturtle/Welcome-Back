@@ -23,6 +23,12 @@ $(document).ready(function(){
   });
 });
 
+// loading
+$(document).ready(function() {
+  $("#status").delay(3000).fadeOut(1000);
+  $("#preloader").delay(3000).fadeOut(1000);
+});
+
 // 顯示彈出視窗函數
 function openModal(id) {
     var modal = document.getElementById(id); // 彈出視窗
