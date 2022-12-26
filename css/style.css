@@ -129,6 +129,33 @@ ul{
 }
 /* nav end */
 
+/*回到頂部*/
+.btn-gotop {
+    position: fixed;
+    z-index: 999;
+    background-image: url(../img/toTOP.png);
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    width: 120px;
+    height: 120px;
+    right: 10px;
+    bottom: 60px;
+    right: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .btn-gotop.show {
+    opacity: 1;
+    z-index: 999;
+  }
+  
+  .btn-gotop:hover {
+    cursor: pointer;
+    background-image: url(../img/toTOP-h.png);
+  }
+/* Back to top end */
 
 .line{
     width: 1px;
@@ -139,18 +166,18 @@ ul{
 }
 
 .homepic{
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: center;    
-    align-items: center; 
-    margin-top: 0;
-    margin-bottom: 40px;
-    box-shadow: 0px 10px 20px #aaaaaa;
-    background-image: url(../img/BACK_home_IN_HELL.png);
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -999;
     background-color: #FFE7C0;
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+.homepic img {
+    min-height: 100%;
+    width: 100%;
 }
 
 .news-area{
