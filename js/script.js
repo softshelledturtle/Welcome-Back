@@ -29,21 +29,25 @@ $(document).ready(function() {
   $("#preloader").delay(3000).fadeOut(1000);
 });
 
-// 顯示彈出視窗函數
+var currentScrollPosition;
+
+// 顯示模擬器
 function openModal(id) {
-    var modal = document.getElementById(id); // 彈出視窗
-    modal.style.display = "block"; // 顯示
-  }
-  
-// 隱藏彈出視窗函數
+currentScrollPosition = window.pageYOffset;
+var modal = document.getElementById(id); // 彈出視窗
+modal.style.display = "block"; // 顯示
+}
+
+// 關閉模擬器
 function closeModal(id) {
-    var modal = document.getElementById(id); // 彈出視窗
-    modal.style.display = "none"; // 隱藏
-  }
+var modal = document.getElementById(id); // 彈出視窗
+modal.style.display = "none"; // 隱藏
+window.scrollTo(0, currentScrollPosition);
+}
   
 var slideIndex = 0;
 
-// 显示幻燈片函数
+// 顯示幻燈片函数
 function showSlides(classname,n = 1) {
     // 幻燈片
     var slides = document.getElementsByClassName(classname);
@@ -51,25 +55,25 @@ function showSlides(classname,n = 1) {
     // 文字容器
     var captions = document.getElementsByClassName("caption-container");
 
-    // 如果幻燈片索引大於最大索引，則设置为 1
+    // 如果幻燈片索引大於最大索引，則設置為 1
     if (n > slides.length) {
         slideIndex = 1;
     }
-    // 如果幻燈片索引小於最小索引，則设置为最大索引
+    // 如果幻燈片索引小於最小索引，則設置為最大索引
     if (n < 1) {
         slideIndex = slides.length;
     }
-    // 隐藏所有幻燈片
+    // 隱藏所有幻燈片
     for (var i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    // 隐藏所有文字容器
+    // 隱藏所有文字容器
     for (var i = 0; i < captions.length; i++) {
         captions[i].style.display = "none";
     }
-    // 显示当前幻燈片
+    // 顯示當前幻燈片
     slides[slideIndex-1].style.display = "block";
-    // 显示当前文字容器
+    // 顯示當前文字容器
     captions[slideIndex-1].style.display = "block";
 
 }
