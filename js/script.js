@@ -31,6 +31,58 @@ $(document).ready(function() {
 
 var currentScrollPosition;
 
+// 滾動淡入淡出
+window.addEventListener('scroll', function() {
+  var marginTop = parseInt(window.getComputedStyle(document.querySelector('#scroll02')).marginTop);
+  if (window.scrollY >= document.querySelector('#scroll02').offsetTop - marginTop) {
+    document.querySelector('#scroll02').style.opacity = 1;
+  } else {
+    document.querySelector('#scroll02').style.opacity = 0;
+  }
+
+  var marginTop = parseInt(window.getComputedStyle(document.querySelector('#scroll03')).marginTop);
+  if (window.scrollY >= document.querySelector('#scroll03').offsetTop - marginTop) {
+    document.querySelector('#scroll03').style.opacity = 1;
+  } else {
+    document.querySelector('#scroll03').style.opacity = 0;
+  }
+
+  var marginTop = parseInt(window.getComputedStyle(document.querySelector('#scroll04')).marginTop);
+  if (window.scrollY >= document.querySelector('#scroll04').offsetTop - marginTop) {
+    document.querySelector('#scroll04').style.opacity = 1;
+  } else {
+    document.querySelector('#scroll04').style.opacity = 0;
+  }
+
+  var marginTop = parseInt(window.getComputedStyle(document.querySelector('#scroll05')).marginTop);
+  if (window.scrollY >= document.querySelector('#scroll05').offsetTop - marginTop) {
+    document.querySelector('#scroll05').style.opacity = 1;
+  } else {
+    document.querySelector('#scroll05').style.opacity = 0;
+  }
+
+  var marginTop = parseInt(window.getComputedStyle(document.querySelector('#scroll06')).marginTop);
+  if (window.scrollY >= document.querySelector('#scroll06').offsetTop - marginTop) {
+    document.querySelector('#scroll06').style.opacity = 1;
+  } else {
+    document.querySelector('#scroll06').style.opacity = 0;
+  }
+
+  var marginTop = parseInt(window.getComputedStyle(document.querySelector('#scroll07')).marginTop);
+  if (window.scrollY >= document.querySelector('#scroll07').offsetTop - marginTop) {
+    document.querySelector('#scroll07').style.opacity = 1;
+  } else {
+    document.querySelector('#scroll07').style.opacity = 0;
+  }
+
+  var marginTop = parseInt(window.getComputedStyle(document.querySelector('#scroll08')).marginTop);
+  if (window.scrollY >= document.querySelector('#scroll08').offsetTop - marginTop) {
+    document.querySelector('#scroll08').style.opacity = 1;
+  } else {
+    document.querySelector('#scroll08').style.opacity = 0;
+  }
+});
+
 // 顯示模擬器
 function openModal(id) {
 currentScrollPosition = window.pageYOffset;
