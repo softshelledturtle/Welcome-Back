@@ -1,0 +1,255 @@
+@font-face {
+    font-family: naikaifont;
+    src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.0/webfont/NaikaiFont-Regular-Lite.woff2) format("woff2")
+    , url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.0/webfont/NaikaiFont-Regular-Lite.woff) format("woff");
+}
+@font-face {
+    font-family: RoundPop;
+    src:local("RoundPop"),local("round-pop"),url('../font/RoundPop-owwjd.woff') format('woff');
+}
+
+html{
+    background-color:#FFF7E0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'naikaifont',sans-serif;
+    margin: 0px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.bodycontainer{
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+ul{
+    list-style: none;
+}
+
+/* loading */
+#preloader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    background-color: #FCF6DD;
+    z-index: 9999;
+}
+
+#status img{
+    position: fixed;
+    max-width: 340px;
+    max-height: 340px;
+    margin-left: -140px;
+    margin-top: -160px;
+    left: 50%;
+    top: 50%;
+}
+/* loading end */
+
+/* nav */
+.nav-container{
+   display: flex;
+   align-items: center;
+}
+
+.nav{
+    justify-content: space-between;
+    display: flex;
+    height: 88px;
+    font-size: 20px;
+    background-color: #7B5333;   
+    padding-right: 100px; 
+    position: relative;
+}
+
+.nav-menu{
+    display: none;
+}
+
+.nav-logo{
+    margin-left: 91px;
+    margin-top: 8px;
+}
+
+.nav-list{
+    display: flex;
+    position: relative;
+}
+
+.nav-item{
+    color: #FFE7C0;
+    align-items: center;
+}
+
+.nav-item-no-hover{
+    color: #FFE7C0;
+    align-items: center;
+}
+
+.nav-item2{
+    color: #FFE7C0;
+    align-items: center;
+}
+
+.nav-link{
+    color: #FFE7C3;
+    text-decoration: none;
+}
+
+.nav-link-no-hover{
+    color: #FFE7C3;
+    text-decoration: none;
+}
+
+.nav-list .nav-sublist {
+    display: none;
+  }
+
+.nav-sublist{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: #E9C084;
+    border-radius: 16px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-10%);
+}
+
+.nav-sublist-link{
+    display: block;
+    background-color: #E9C084;
+    color: #7B5333;
+    padding: 22px;
+    border-radius: 16px;
+    text-decoration: none;
+}
+
+.nav-sublist2{
+    display: none;
+}
+
+.nav-item:hover > .nav-link {
+	color:#DBA552;
+}
+
+.nav-item-no-hover:hover > .nav-link-no-hover {
+	color:#DBA552;
+}
+
+.nav-sublist-item:hover > .nav-sublist-link {
+    color:#000000;
+    background-color: #DBA552;
+}
+/* nav end */
+
+/*回到頂部*/
+.btn-gotop {
+    position: fixed;
+    z-index: 999;
+    background-image: url(../img/toTOP.png);
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    width: 120px;
+    height: 120px;
+    right: 10px;
+    bottom: 60px;
+    right: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .btn-gotop.show {
+    opacity: 1;
+    z-index: 999;
+  }
+  
+  .btn-gotop:hover {
+    cursor: pointer;
+    background-image: url(../img/toTOP-h.png);
+  }
+/* Back to top end */
+
+.line{
+    width: 1px;
+    height: 24px;
+    margin-left: 30px;
+    margin-right: 30px;
+    color:#FFE7C0;
+}
+
+.title{
+    color:#7B5333;   
+    font-size: 40px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;    
+    align-items: center; 
+    font-family: 'RoundPop',sans-serif;
+    letter-spacing: 3px;
+}
+
+.sentences{
+    width: 500px;
+    box-sizing: border-box;
+    vertical-align:middle;
+}
+
+.about01{
+    display: flex;
+    justify-content: center;    
+    align-items: center; 
+    margin-top: 64px;
+    font-size: 24px;
+    line-height: 48px;
+    color: #7B5333;
+}
+
+.about02{
+    display: flex;
+    justify-content: center;    
+    align-items: center; 
+    margin-top: 64px;
+    font-size: 20px;
+    line-height: 40px;
+    color: #7B5333;
+}
+
+.about03{
+    display: flex;
+    justify-content: center;    
+    align-items: center; 
+    margin-top: 64px;
+    font-size: 20px;
+    line-height: 40px;
+    color: #7B5333;
+}
+
+.about04{
+    display: flex;
+    justify-content: center;    
+    align-items: center; 
+    margin-top: 64px;
+    font-size: 20px;
+    line-height: 40px;
+    color: #7B5333;
+}
+
+.about05{
+    display: flex;
+    justify-content: center;    
+    align-items: center; 
+    margin-top: 64px;
+    font-size: 20px;
+    line-height: 40px;
+    color: #7B5333;
+}
