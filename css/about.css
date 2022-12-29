@@ -29,6 +29,56 @@ ul{
     list-style: none;
 }
 
+/*回到頂部*/
+.btn-gotop {
+    position: fixed;
+    z-index: 999;
+    background-image: url(../img/toTOP.png);
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    width: 120px;
+    height: 120px;
+    right: 10px;
+    bottom: 60px;
+    right: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .btn-gotop.show {
+    opacity: 1;
+    z-index: 999;
+  }
+  
+  .btn-gotop:hover {
+    cursor: pointer;
+    background-image: url(../img/toTOP-h.png);
+  }
+/* Back to top end */
+
+/* loading */
+#preloader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    background-color: #FCF6DD;
+    z-index: 9999;
+}
+
+#status img{
+    position: fixed;
+    max-width: 340px;
+    max-height: 340px;
+    margin-left: -140px;
+    margin-top: -160px;
+    left: 50%;
+    top: 50%;
+}
+/* loading end */
+
 .nav-container{
     display: flex;
     align-items: center;

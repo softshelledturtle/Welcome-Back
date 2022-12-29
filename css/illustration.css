@@ -118,6 +118,7 @@ ul{
 
 .nav-sublist{
     display: flex;
+    z-index: 99999;
     align-items: center;
     position: absolute;
     top: 20px;
