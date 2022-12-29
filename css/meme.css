@@ -771,14 +771,14 @@ ul{
     background-color: #E9C084;
   }
 
-    .row{
-        display: grid;
-        justify-content: center;
-        padding:0px ;
+  .row{
+    display: grid;
+    justify-content: center;
+    padding:0px ;
     }
-    
+
     .col{
-        display: grid;
+    display: grid;
     }
 
     .group{
