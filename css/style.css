@@ -149,6 +149,14 @@ ul{
     color:#000000;
     background-color: #DBA552;
 }
+
+.line{
+    width: 1px;
+    height: 24px;
+    margin-left: 30px;
+    margin-right: 30px;
+    color:#FFE7C0;
+}
 /* nav end */
 
 /*回到頂部*/
@@ -221,14 +229,6 @@ ul{
     /* max-width: 950px; */
 }
 /* slide end */
-
-.line{
-    width: 1px;
-    height: 24px;
-    margin-left: 30px;
-    margin-right: 30px;
-    color:#FFE7C0;
-}
 
 .homepic{
     position: relative;
