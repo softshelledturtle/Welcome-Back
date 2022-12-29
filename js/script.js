@@ -75,8 +75,8 @@ window.addEventListener('scroll', function() {
     document.querySelector('#scroll07').style.opacity = 0;
   }
 
-  var marginTop = parseInt(window.getComputedStyle(document.querySelector('#scroll08')).marginTop);
-  if (window.scrollY >= document.querySelector('#scroll08').offsetTop - marginTop) {
+  var marginTop = parseInt(window.getComputedStyle(document.querySelector('#scroll07')).marginTop);
+  if (window.scrollY >= document.querySelector('#scroll07').offsetTop - marginTop) {
     document.querySelector('#scroll08').style.opacity = 1;
   } else {
     document.querySelector('#scroll08').style.opacity = 0;

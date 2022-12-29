@@ -4,47 +4,75 @@
     <meta charset="utf-8">
     <title>Welcome Back.gallery illustration</title>
     <link href="css/comic.css" rel="stylesheet" type="text/css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="bookmark" href="img/favicon.ico" />
+    <!-- favicon end -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="js/script.js"></script>
 </head>
 <div class="body-container">
 <body>
+    <div id="preloader">
+        <div id="status"><img src="img/LOADING.gif"/></div>
+    </div>
     <header class="header">
         <nav class="nav">
-                <a class="nav-logo" href="index.html" target="_self">
-                <img src="img/btn_logo.png" alt="Back's logo">
-                </a>
-            <div class="nav-container">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="about.html" target="_self">ABOUT</a></li>
-                <li class="nav-item"><a class="line">|</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" target="_self">STORY</a></li>
-                <li class="nav-item"><a class="line">|</a></li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" target="_self">GALLERY</a>
-                    <ul class="nav-sublist">
-                        <li class="nav-sublist-item">
-                            <a class="nav-sublist-link" href="illustration.html" target="_self">ILLUSTRATION</a>
-                        </li>
-                        <li class="nav-sublist-item">
-                            <a class="nav-sublist-link" href="comic.html" target="_self">COMIC</a>
-                        </li>
-                        <li class="nav-sublist-item">
-                            <a class="nav-sublist-link" href="#" target="_self">MEME</a>
-                        </li>
-                        <li class="nav-sublist-item">
-                            <a class="nav-sublist-link" href="#" target="_self">ANIMATION</a>
-                        </li>
-                    </ul>
+            <a class="nav-logo" href="index.html" target="_self">
+            <img src="img/btn_logo.png" alt="Back's logo">
+            </a>
+        <span class="nav-menu">&#9776</span>
+        <div class="nav-container">
+        <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="about.html" target="_self">ABOUT</a></li>
+            <li class="nav-item2"><a class="line">|</a></li>
+            <li class="nav-item"><a class="nav-link" href="story.html" target="_self">STORY</a></li>
+            <li class="nav-item2"><a class="line">|</a></li>
+            <li class="nav-item-no-hover">
+                <a class="nav-link-no-hover" href="#" target="_self">GALLERY</a>
+                <ul class="nav-sublist">
+                    <li class="nav-sublist-item">
+                        <a class="nav-sublist-link" href="illustration.html" target="_self">ILLUSTRATION</a>
+                    </li>
+                    <li class="nav-sublist-item">
+                        <a class="nav-sublist-link" href="comic.html" target="_self">COMIC</a>
+                    </li>
+                    <li class="nav-sublist-item">
+                        <a class="nav-sublist-link" href="meme.html" target="_self">MEME</a>
+                    </li>
+                    <li class="nav-sublist-item">
+                        <a class="nav-sublist-link" href="animation.html" target="_self">ANIMATION</a>
+                    </li>
+                </ul>
+            </li>
+            <ul class="nav-sublist2">
+                <li class="nav-sublist2-item">
+                    <a class="nav-sublist2-link" href="illustration.html" target="_self">ILLUSTRATION</a>
                 </li>
-                <li class="nav-item"><a class="line">|</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" target="_self">PRODUCT</a></li>
-                <li class="nav-item"><a class="line">|</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" target="_self">CREATOR</a></li>
-            </ul>   
-            </div>         
-        </nav> 
+                <li class="nav-sublist2-item">
+                    <a class="nav-sublist2-link" href="comic.html" target="_self">COMIC</a>
+                </li>
+                <li class="nav-sublist2-item">
+                    <a class="nav-sublist2-link" href="meme.html" target="_self">MEME</a>
+                </li>
+                <li class="nav-sublist2-item">
+                    <a class="nav-sublist2-link" href="animation.html" target="_self">ANIMATION</a>
+                </li>
+            </ul>
+            <li class="nav-item2"><a class="line">|</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" target="_self">CREATOR</a></li>
+        </ul>   
+        </div>         
+    </nav> 
     </header>
+
+    <!--回到頂部-->
+    <button type="button"
+    class="btn btn-gotop d-inline-flex align-items-center justify-content-center"
+    data-action="gotop">
+    <i class="fas fa-chevron-up"></i>
+    </button>
+    
     <!-- 彈出視窗 -->
         <div id="myModal01" class="modal" onload="showSlides()">
             <!-- 關閉按鈕 -->
@@ -306,23 +334,22 @@
         </ul>
 </div>
 
-        <footer class="footer">
-            <ul class="footer-bar">
-                <li class="footer-bar-item"><a class="footer-bar-link" href="https://www.instagram.com/iamback_1127/" target="_blank"><img src="img/btn_instagram.png" alt="instagram icon"></a></li>
-                <li class="footer-bar-item"><a class="footer-bar-link" href="https://youtube.com/playlist?list=PLqbr_p3WIS6zO0qPnvYKEdfyBJlWgLqaf" target="_blank"><img src="img/btn_youtube.png" alt="youtube icon"></a></li>
-                <li class="footer-bar-item"><a class="footer-bar-link" href="https://twitter.com/bearjiajia625" target="_blank"><img src="img/btn_twitter.png" alt="twitter icon"></a></li>
-                <li class="footer-bar-item"><a class="footer-bar-link" href="https://www.plurk.com/bearjiajia" target="_blank"><img src="img/btn_plurk.png" alt="plurk icon"></a></li>
-            </ul>
-            <div class="footer-aside">
-                <p>Back’s E-mail：110819035back@gmail.com</p>
-                <p>Creator’s E-mail：zxcvbnm71327@gmail.com</p>
-            </div>
+<footer class="footer">
+    <ul class="footer-bar">
+        <li class="footer-bar-item"><a class="footer-bar-link" href="https://www.instagram.com/iamback_1127/" target="_blank"><img class="footer-icon" src="img/btn_instagram.png" alt="instagram icon"></a></li>
+        <li class="footer-bar-item"><a class="footer-bar-link" href="https://youtube.com/playlist?list=PLqbr_p3WIS6zO0qPnvYKEdfyBJlWgLqaf" target="_blank"><img class="footer-icon" src="img/btn_youtube.png" alt="youtube icon"></a></li>
+        <li class="footer-bar-item"><a class="footer-bar-link" href="https://twitter.com/bearjiajia625" target="_blank"><img class="footer-icon" src="img/btn_twitter.png" alt="twitter icon"></a></li>
+        <li class="footer-bar-item"><a class="footer-bar-link" href="https://www.plurk.com/bearjiajia" target="_blank"><img class="footer-icon" src="img/btn_plurk.png" alt="plurk icon"></a></li>
+    </ul>
+    <div class="footer-aside">
+        <p>Back’s E-mail：110819035back@gmail.com</p>
+        <p>Creator’s E-mail：zxcvbnm71327@gmail.com</p>
+    </div>
             
-            <div class="footer-below">
-                
-                <p class="copyright">&copy;2022 Bearjiajia</p>
-            </div>
-        </footer>
+    <div class="footer-below">
+        <p class="copyright">&copy;2022 Bearjiajia</p>
+    </div>
+</footer>
 </body>
 </div>
 </html>
