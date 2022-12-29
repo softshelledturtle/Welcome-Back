@@ -230,8 +230,9 @@ ul{
     display: flex;
     font-size: 20px;
     color: #7B5333;
-    justify-content: center;    
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
   }
 
   .contact01, .contact02, .contact03, .contact04, .contact05 {
@@ -473,66 +474,62 @@ ul{
         max-width: 640px;
     }
     
-    .about01{
+
+    .ME {
+        display: flex;
         flex-direction: column;
+        justify-content: center; /* 將內容放在邊界之間 */
+        align-items: center; /* 將內容置中對齊 */
+      }
+    
+    .mypic{
+        margin:60px 0px 0px 0px;
+    }
+    .about{
+        flex-direction: row;
         justify-content: center;    
         align-items: center; 
-        margin-top: 64px;
+        margin-top: 0px;
+        margin-bottom: 40px;
         font-size: 24px;
         line-height: 48px;
         color: #7B5333;
+        text-align: center;
     }
     
-    .about02{
-        flex-direction: column-reverse;
-        justify-content: center;    
-        align-items: center; 
-        margin-top: 64px;
-        font-size: 20px;
-        line-height: 40px;
-        color: #7B5333;
-    }
-    
-    .about03{
-        flex-direction: column;
-        justify-content: center;    
-        align-items: center; 
-        margin-top: 64px;
-        font-size: 20px;
-        line-height: 40px;
-        color: #7B5333;
-    }
-    
-    .about04{
-        flex-direction: column-reverse;
-        justify-content: center;    
-        align-items: center; 
-        margin-top: 64px;
-        font-size: 20px;
-        line-height: 40px;
-        color: #7B5333;
-    }
-    
-    .about05{
-        flex-direction: column;
-        justify-content: center;    
-        align-items: center; 
-        margin-top: 64px;
-        font-size: 20px;
-        line-height: 40px;
-        color: #7B5333;
-    }
 
-    .IG{
-        display: flex;
-        max-width: 100%;
-        max-height: 100%;
-        justify-content: center;    
-        align-items: center; 
-        margin-top: 128px;
-        box-shadow: 0px -12px 20px 4px #E9C084;
-        background-image: url(../img/BACK_follow_ig.png);
+    .CONTACT{
+        display: grid;
+        justify-content: center;
+        justify-items: start;
     }
+    .Contact-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* 將物件置中 */
+        align-items: flex-start; /* 將物件對齊到 container 的左端 */
+        font-size: 20px;
+        color: #7B5333;
+      }
+    
+      .Contact-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* 將物件置中 */
+        align-items: flex-start; /* 將物件對齊到 container 的左端 */
+        margin-bottom: 80px;
+        font-size: 20px;
+        color: #7B5333;
+      }
+    
+      .contact01, .contact02, .contact03, .contact04, .contact05 {
+        display: flex;
+        margin: 24px;
+      }
+    
+      .name{
+        margin-left: 16px;
+      }
 
     .footer {
         width: 100%;
